@@ -1,0 +1,32 @@
+.App {
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: 4fr 8fr;
+  grid-template-areas:
+    "h h"
+    "n c"
+    "f f";
+  max-width: 450px;
+  min-height: 80vh;
+  margin: 0 auto;
+}
+
+.header {
+  grid-area: h;
+  background-color: aqua;
+}
+
+.navigation {
+  grid-area: n;
+  background-color: blueviolet;
+}
+
+.content {
+  grid-area: c;
+  background-color: coral;
+}
+
+.footer {
+  grid-area: f;
+  background-color: teal;
+}
