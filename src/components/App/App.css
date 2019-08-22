@@ -1,11 +1,11 @@
 .App {
   display: grid;
-  grid-template-rows: 1fr 10fr 1fr;
-  grid-template-columns: 4fr 8fr;
+  grid-template-rows: 50px 10fr 1fr;
+  grid-template-columns: 12fr;
   grid-template-areas:
-    "h h"
-    "n c"
-    "f f";
+    "h"
+    "c"
+    "f";
   max-width: 450px;
   min-height: 80vh;
   margin: 0 auto;
@@ -14,10 +14,12 @@
 .header {
   grid-area: h;
   background-color: aqua;
+  height: 50px;
 }
 
 .navigation {
-  grid-area: n;
+  position: absolute;
+  top: 50px;
   background-color: blueviolet;
 }
 

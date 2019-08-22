@@ -1,9 +1,13 @@
 import React from 'react';
 import './Header.css';
 
-function Header() {
+const Header = (props) => {
+  const btnTitle = `${props.navActive ? 'Close' : 'Show'} nav`;
   return (
-    <section className="header">Header</section>
+    <section className="header">
+      <button onClick={props.setNav}>{ btnTitle }</button>
+      <span>TO-DO COMBAINE</span>
+    </section>
   );
 }
 

@@ -1,0 +1,8 @@
+li {
+  cursor: pointer;
+  padding: 3px 5px;
+}
+
+li:hover {
+  color: azure;
+}
