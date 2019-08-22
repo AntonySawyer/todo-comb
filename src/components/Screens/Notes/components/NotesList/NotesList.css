@@ -10,10 +10,6 @@
   overflow: overlay;
 }
 
-.notes-list ul li {
-  position: relative;
-}
-
 .notes-list ul li label {
   color: #000000;
   display: block;
