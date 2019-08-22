@@ -1,10 +1,18 @@
 import React from 'react';
 import './Calendar.css';
 
-function Calendar() {
+class Calendar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
   return (
-    <section className="content calendar">Calendar screen will be here soon</section>
+    <div>
+      Calendar in progress
+    </div>
   );
+  }
 }
 
 export default Calendar;

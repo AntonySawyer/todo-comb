@@ -7,6 +7,7 @@ const Header = (props) => {
     <section className="header">
       <button onClick={props.setNav}>{ btnTitle }</button>
       <span>TO-DO COMBAINE</span>
+      <span>{props.curScreen}</span>
     </section>
   );
 }

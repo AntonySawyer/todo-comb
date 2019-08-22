@@ -1,0 +1,37 @@
+.notes-viewer {
+  width: 70%;
+}
+
+.notes-viewer h1 {
+  display: inline;
+  margin-right: 10px;
+}
+
+.notes-viewer .btn {
+  font-size: 16px;
+}
+
+.textArea {
+  display: block;
+  max-height: 350px;
+  overflow: overlay;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+}
+
+.editNoteText {
+  display: block;
+  max-height: 350px;
+  overflow: overlay;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.hightlight {
+  font-weight: bold;
+  color: #f7b11a;
+}
+
+.hightlight :hover {
+  color: #2ecc71;
+}

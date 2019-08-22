@@ -29,7 +29,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header navActive={this.state.navIsActive} setNav={this.setNav.bind(this)} />
+        <Header navActive={this.state.navIsActive} setNav={this.setNav.bind(this)} curScreen={this.state.activeScreen} />
         {this.state.navIsActive && <Nav setScreen={this.setScreen.bind(this)} />}
         {this.state.activeScreen === 'list' && <List />}
         {this.state.activeScreen === 'focus' && <Focus />}

@@ -1,0 +1,39 @@
+.notes-list h1 {
+  margin: 0;
+}
+
+.notes-list ul {
+  list-style: none;
+  font-size: 16px;
+  padding: 0 10px;
+  max-height: 55vh;
+  overflow: overlay;
+}
+
+.notes-list ul li {
+  position: relative;
+}
+
+.notes-list ul li label {
+  color: #000000;
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.notes-list ul li label:hover,
+.active {
+  background: #2ecc71;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.active {
+  background: #2ecc71;
+  border-radius: 10px;
+}
