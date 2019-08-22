@@ -36,8 +36,7 @@ class Focus extends React.Component {
       minutes: PrimeZero(min),
       seconds: PrimeZero(sec),
     })
-
-    if (hours === 0 && min === 0 && sec === 0) {
+    if (this.secondsRemaining === 0) {
       this.stopTimer();
       alert('Success!');
     }
