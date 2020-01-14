@@ -2,10 +2,11 @@ import React from 'react';
 
 import TagCloud from '../TagCloud';
 import './NotesList.css';
+import Button from '../common/Button';
 
 
 
-export default ({ activeNoteId, notes, tags, onChange, deleteData, saveData, newNote, filter, filterEnabled }) => {
+export default ({ activeNoteId, notes, tags, onChange, deleteData, newNote, filter, filterEnabled }) => {
   const NotesTitles = [];
   Object.keys(notes).forEach(id => {
     NotesTitles.push(<li key={id} className={activeNoteId === id ? 'active' : undefined}>
@@ -18,13 +19,13 @@ export default ({ activeNoteId, notes, tags, onChange, deleteData, saveData, new
   return (
     <div className="notes-list">
       <input type="text" id="newNoteTitle" placeholder="Add new note title..." />
-      <button className="btn btn-green" onClick={ newNote }>New</button>
+      <Button title="New" handle={newNote} classes="btn green-bg middle-btn" />
       <ul>
         { NotesTitles }
       </ul>
       <span>Filter by: { filterEnabled || 'none' }</span>
-      <button onClick={() => filter(null)} className="btn btn-inverted">X</button>
-      <TagCloud tags={tags} deleteData={deleteData} saveData={saveData} filter={filter} />
+      <Button title="X" handle={() => filter(null)} classes="btn small-btn orange-bg" />
+      <TagCloud tags={tags} deleteData={deleteData} filter={filter} />
     </div>
   )
 }

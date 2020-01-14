@@ -1,5 +1,5 @@
 export const formatTag = () => {
-  const input = document.getElementById('newTadName');
+  const input = document.getElementById('newTadName'); // если только из инпута - то уже нет смысла от функции
   const strToSave = input.value.trim().replace(/ /g, '_');
   input.value = '';
   return strToSave;

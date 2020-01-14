@@ -1,0 +1,23 @@
+.hidden {
+  display: none;
+}
+
+.green-bg {
+  background-color: #2ecc71;
+}
+
+.red-bg {
+  background-color: #e74c3c;
+}
+
+.orange-bg {
+  background-color: #f7b11a;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+

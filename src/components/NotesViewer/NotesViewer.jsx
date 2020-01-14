@@ -3,6 +3,7 @@ import Tag from '../Tag';
 import { focusAtEnd } from '../../utils/domWorker';
 import { collectTags } from '../../utils/prepareDataToSave';
 import './NotesViewer.css';
+import Button from '../common/Button';
 
 export default class NotesViewer extends React.Component {
   constructor(props) {
@@ -67,9 +68,12 @@ export default class NotesViewer extends React.Component {
         <h1>{ this.state.title }</h1>
         <input type="text" value={ this.state.title } className="hidden" id="editNoteTitle"
          onChange={this.handleChange} name="title" />
-        <button className="btn btn-red" onClick={() => deleteData('notes', note.id) }>Del</button>
-        <button className="btn btn-orange" onClick={ editNote } id="editBtn">Edit</button>
-        <button className="btn btn-green hidden" onClick={() => {this.highlightTags('add'); saveData('notes', note.id)} } id="saveBtn">Save</button>
+        <Button title="Del" handle={() => deleteData('notes', note.id)} 
+                classes="btn small-btn red-bg" />
+        <Button title="Edit" handle={editNote} 
+                classes="btn small-btn orange-bg" id="editBtn" />
+        <Button title="Save" handle={() => { this.highlightTags('add'); saveData('notes', note.id) }}
+          classes="hidden btn small-btn green-bg" id="saveBtn" />
         <p className="textArea" id="noteText" contentEditable={false} 
           onKeyUp={this.handleChange} name="text">{this.props.note.text}</p>
         <div id="noteTags">
