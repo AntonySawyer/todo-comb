@@ -1,3 +1,7 @@
+.navbar-toggle { 
+  display: block; 
+}
+
 span {
   padding-left: 10px;
 }
