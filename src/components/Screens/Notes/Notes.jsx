@@ -49,6 +49,7 @@ class Notes extends React.Component {
   }
 
   saveData = (key, id) => {
+    // Useless formatTag ?
     const dataToSave = key === 'tags' ? PrepareData.formatTag() : PrepareData.getNoteObj(id);
     StorageWorker.saveData(key, dataToSave, id);
     DomWorker.editEnd();
@@ -120,7 +121,6 @@ class Notes extends React.Component {
           tags={tags}
           onChange={this.changeNote}
           deleteData={this.deleteData}
-          saveData={this.saveData}
           newNote={this.newNote}
           filter={this.filter}
           filterEnabled={filterEnabled}
