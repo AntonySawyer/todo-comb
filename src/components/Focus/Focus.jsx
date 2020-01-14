@@ -1,7 +1,7 @@
 import React from 'react';
 import './Focus.css';
-import { PrimeZero } from '../../../utils/timeFormat';
-import Button from '../../common/Button';
+import { PrimeZero } from '../../utils/timeFormat';
+import Button from '../common/Button';
 
 class Focus extends React.Component {
   constructor(props) {

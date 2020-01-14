@@ -3,7 +3,7 @@ import Tag from '../Tag';
 import { focusAtEnd } from '../../utils/domWorker';
 import { collectTags } from '../../utils/prepareDataToSave';
 import './NotesViewer.css';
-import Button from '../../../../common/Button/Button';
+import Button from '../common/Button';
 
 export default class NotesViewer extends React.Component {
   constructor(props) {

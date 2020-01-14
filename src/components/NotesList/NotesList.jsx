@@ -2,7 +2,7 @@ import React from 'react';
 
 import TagCloud from '../TagCloud';
 import './NotesList.css';
-import Button from '../../../../common/Button/Button';
+import Button from '../common/Button';
 
 
 

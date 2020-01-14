@@ -2,27 +2,17 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from '../Footer';
 import Header from '../Header';
-import List from '../Screens/List';
-import Calendar from '../Screens/Calendar';
-import Focus from '../Screens/Focus';
-import Notes from '../Screens/Notes';
-import Task from '../Screens/Task';
-import Projects from '../Screens/Projects/Projects';
+import List from '../List';
+import Calendar from '../Calendar';
+import Focus from '../Focus';
+import Notes from '../Notes';
+import Task from '../Task';
+import Projects from '../Projects';
 import './App.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { navIsActive: false, activeScreen: 'list' };
-  }
-
-  setNav() {
-    this.setState({ navIsActive: !this.state.navIsActive });
-  }
-
-  setScreen(target) {
-    this.setNav();
-    this.setState({ activeScreen: target });
   }
 
   render() {
@@ -36,9 +26,9 @@ class App extends React.Component {
             <Route path='/focus' component={Focus} />
             <Route path='/notes' component={Notes} />
             <Route path='/projects' component={Projects} />
+            <Route path='/task' component={Task} />
           </Switch>
         </Router>
-        {this.state.activeScreen === 'task' && <Task />}
         <Footer />
       </div>
     );

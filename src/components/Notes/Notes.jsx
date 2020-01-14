@@ -1,12 +1,12 @@
 import React from 'react';
 import './Notes.css';
-import * as StorageWorker from './utils/StorageWorker';
-import * as PrepareData from './utils/prepareDataToSave';
-import * as DomWorker from './utils/domWorker';
-import TagsFilter from './utils/tagsFilter';
+import * as StorageWorker from '../../utils/StorageWorker';
+import * as PrepareData from '../../utils/prepareDataToSave';
+import * as DomWorker from '../../utils/domWorker';
+import TagsFilter from '../../utils/tagsFilter';
 
-import NotesList from './components/NotesList';
-import NotesViewer from './components/NotesViewer';
+import NotesList from '../NotesList';
+import NotesViewer from '../NotesViewer';
 
 
 class Notes extends React.Component {

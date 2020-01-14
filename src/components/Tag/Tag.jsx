@@ -1,6 +1,6 @@
 import React from 'react';
 import './Tag.css';
-import Button from '../../../../common/Button/Button';
+import Button from '../common/Button';
 
 export default ({ title, deleteData, filter }) => {
   return (
